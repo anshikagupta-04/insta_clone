@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFAFA;
+    display: flex;
+}
+.navbar{
+    width: 16vw;
+    height: 100vh;
+    /* background-color: #FAFAFA; */
+    border-right: 3px solid #00000019;
+    position: fixed;
+    z-index: 10;
+    padding: 4vh;
+}
+.main{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    justify-content: end;
+    background-color: aqua;
+    position: absolute;
+    /* overflow-y: scroll; */
+}
+.name{
+    display: flex;
+    align-items: center;
+    margin: 0vh 0 4vh 0;
+    height: 7vh;
+}
+.name img{
+    height: 5.5vh;
+}
+.nav{
+    width: 10vw;
+    height: 6vh;
+    margin: 2vh 0 2vh 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-size: 2.3vh;
+    font-family: 'Roboto', sans-serif;
+}
+.nav img{
+    height: 4vh;
+    margin-right: 2vw;
+}
+.content{
+    width: calc(65% - 10vw);
+    height: 100%;
+
+}
+.suggestion{
+    width: calc(35% - 10vw);
+    height: 100%;
+    background-color: #FAFAFA;
+    border: 3px solid black;
+}
+.stories{
+    display: flex;
+    padding: 30px 0 30px 0;
+    justify-content: space-evenly;
+    height: 20vh;
+    overflow-x:scroll;
+}
+.stories::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 5px solid black;
+    margin: 0 20px 0 20px;
+}
