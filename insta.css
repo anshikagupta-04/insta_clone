@@ -64,9 +64,10 @@ body{
     /* border: 3px solid black; */
 }
 .stories-container{
-    /* display: flex; */
+    display: flex;
     padding: 30px;
-    /* justify-content: space-evenly; */
+    justify-content: center;
+    align-items: center;
     height: 18vh;
     width: 100%;
     /* background-color: antiquewhite; */
@@ -84,11 +85,17 @@ body{
     /* grid-auto-columns: 5rem; */
     grid-gap: 2rem;
 }
+.story-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .story{
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    padding: 2px;
+    margin-bottom: 7px;
     display: flex;
     place-items: center;
     background: linear-gradient(to bottom left, rgb(211, 7, 211), rgb(233, 85, 110), rgb(241, 36, 36), rgb(223, 164, 57), rgb(248, 248, 54));
