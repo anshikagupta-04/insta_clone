@@ -9,6 +9,9 @@ body{
     height: 100vh;
     background-color: #FAFAFA;
     display: flex;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 .navbar{
     width: 16vw;
@@ -21,13 +24,16 @@ body{
 }
 .main{
     width: calc(100% - (16vw + 4vh + 4vh + 3px));
-    height: 500%;
+    height: 100%;
     display: flex;
     justify-content: end;
     background-color: #FAFAFA;
     position: absolute;
     left: calc(16vw + 4vh + 4vh + 2px);
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
+}
+.main::-webkit-scrollbar {
+    display: none;
 }
 .name{
     display: flex;
@@ -61,6 +67,10 @@ body{
     width: 35%;
     height: 100%;
     background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0;
     /* border: 3px solid black; */
 }
 .stories-container{
@@ -167,6 +177,9 @@ body{
 .post .user img{
     width: 35px;
 }
+.post .user .username img{
+    width: 15px;
+}
 .post img{
     width: 100%;
     max-height: 600px;
@@ -205,4 +218,62 @@ body{
 }
 .emoji img{
     height: 17px;
+}
+.suggestion .account{
+    /* height: 11vh; */
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.suggestion .account .info{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.suggestion .account .info .profile_pic{
+    height: 75px;
+    width: 75px;
+    border-radius: 80%;
+    margin: 0 20px 0 0;
+}
+.suggestion .account .info .profile_pic img{
+    height: 75px;
+    width: 75px;
+    border-radius: 80%;
+    object-fit: fill;
+}
+.suggestion .account .info .profile_img img{
+    height: 50px;
+    width: 50px;
+    border-radius: 80%;
+    object-fit: fill;
+    margin: 0 20px 0 0;
+}
+.suggest{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.photo{
+    overflow: hidden;
+    position: relative;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo i{
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.5s;
 }
