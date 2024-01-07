@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="phone">
+        <img id="p1" src="img/screenshot1-2x.png">
+        <img id="p2" src="img/screenshot2-2x.png">
+        <img id="p3" src="img/screenshot3-2x.png">
+    </div>
+    <div class="login">
+        <div class="log-in">
+            <img src="img/instagram.svg">
+            <input id="user" type="text" placeholder="Phone number, username or email address">
+            <input id="pass" type="password" placeholder="Password">
+            <button onclick="login()">Log in</button>
+            <div class="or">
+                <div class="line"></div>
+                OR
+                <div class="line"></div>
+            </div>
+            <div class="fb" style="font-size: 25px; color: #385185;">
+                <i class="ri-facebook-box-fill"></i>
+                <p style="font-size: 15px; padding: 10px;">Log in with Facebook</p>
+            </div>
+            <p style="font-size: 12px;">Forgotten your password?</p>
+        </div>
+        <div class="signup">
+            Don't have an account?
+            <a href="#" style="margin: 3px; text-decoration: none;">Sign Up</a>
+        </div>
+    </div>
+    <script>
+        var user = document.getElementById("user")
+        var pass = document.getElementById("pass")
+        // var login = document.querySelector("button");
+        function login(){
+            if(user.value == "anshika_.gupta04" && pass.value == "22anshi"){
+                window.location.href = "index.html"
+            }
+        };
+        // login.addEventListener("onclick", function(){
+        //     if(user.value == "anshika_.gupta04" && pass.value == "22anshi"){
+        //         window.location.href = "index.html"
+        //     }
+        // })
+    </script>
+</body>
